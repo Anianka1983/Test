@@ -143,37 +143,28 @@ body{
   padding-bottom: 100px;
 }
 .editorial-transition{
-  padding: 80px 0;
+  padding: 50px 0 40px; 
   text-align: center;
 }
-.editorial-transition p{
+
+.transition-quote{
   font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
-  line-height: 1.4;
+  font-size: clamp(18px, 2.2vw, 22px); 
+  font-style: italic;
+  line-height: 1.6;
   color: #1e3151;
-}
-.process-item{
+  opacity: 0.75; /* softer */
   max-width: 600px;
-  margin: 0 auto 40px;
-  text-align: center;
+  margin: 0 auto;
 }
-.process-item h3{
-  font-family: "Cormorant Garamond", serif;
-  font-size: 26px;
-  margin-bottom: 10px;
-  color: #1e3151;
-}
-.process-item p{
-  color: #5b6b7f;
-  font-size: 16px;
-  line-height: 1.7;
-}
-  .transition-text{
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(26px, 3vw, 34px);
-  line-height: 1.4;
-  color: #1e3151; 
-  opacity: 0.9;
+.editorial-transition::before{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #d8d2cb;
+  margin: 0 auto 20px;
+  opacity: 0.6;
 }
 </style>
 
@@ -377,7 +368,7 @@ Dating apps aren't built for depth or for busy, intentional people.
   <div class="section-divider"></div>
 
 <section class="editorial-transition">
- <p class="transition-text">
+<p class="transition-quote">
   It’s not that you’re not meeting people.<br>
   It’s that you’re not meeting the right ones.
 </p>
